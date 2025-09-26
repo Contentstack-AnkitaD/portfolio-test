@@ -1,5 +1,5 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,12 +10,11 @@
 
     <!-- Navigation Listener Scripts (Auto-injected) -->
     <script src="https://unpkg.com/tw-to-css@0.0.12/dist/cdn.min.js"></script>
-    <script src="http://localhost:4018/script/html-json-converter-script.js"></script>
-    <script src="./scripts/navigation-tracker.js"></script>
-    <script src="./scripts/message-handler.js"></script>
-    <script src="./scripts/navigation-listener.js"></script>
+    <script src="/scripts/json-html-converter.js"></script>
+    <script src="/scripts/navigation-tracker.js"></script>
+    <script src="/scripts/message-handler.js"></script>
+    <script src="/scripts/navigation-listener.js"></script>
 </head>
-
 <body>
     <!-- Navigation -->
     <nav class="navbar">
@@ -29,6 +28,9 @@
                 </li>
                 <li class="nav-item">
                     <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#achievements" class="nav-link">Achievements</a>
                 </li>
                 <li class="nav-item">
                     <a href="#projects" class="nav-link">Projects</a>
@@ -54,8 +56,8 @@
                 </h1>
                 <p class="hero-subtitle">Full Stack Developer & UI/UX Designer</p>
                 <p class="hero-description">
-                    I create beautiful, functional, and user-centered digital experiences
-                    that bring ideas to life through innovative code and design.
+                    I create beautiful, functional, and user-centered digital experiences 
+                    that bring ideas to life through code and design.
                 </p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">View My Work</a>
@@ -87,37 +89,34 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <section id="about" class="about" data-tag="18497702-ae86-4646-85e1-e7e56c13d5fe-Tag">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">About Me</h2>
                 <p class="section-subtitle">Get to know me better</p>
             </div>
+            <header class="about-header">
+                <h3>My Journey</h3>
+            </header>
+            <header>
+                <h2>My Expertise</h2>
+            </header>
+            <header>
+                <h2>TODO: Add header content</h2>
+            </header>
             <div class="about-content">
-                <div style="padding: var(--token-spacing_padding_space_8)">
-                    <p style="color: var(--token-typography_color_color_secondary); font-size: var(--token-typography_font_size_font_size_lg); line-height: var(--token-typography_line_height_line_height_default);"><!-- TODO: Add content for the new text element --></p>
-                    <img src="#" alt="TODO: Add descriptive alt text" style="border-radius: var(--token-border_radius_border_radius_md); max-width: 100%;"><!-- TODO: Replace '#' with the actual image source -->
-                    <img src="#" alt="TODO: Add descriptive alt text" style="border-radius: var(--token-border_radius_border_radius_md); max-width: 100%;"><!-- TODO: Replace '#' with the actual image source -->
-                </div>
-                <div style="padding: var(--token-spacing_padding_space_8)">
-                    <!-- TODO: Add content for the new box element -->
-                </div>
                 <div class="about-text">
                     <p class="about-description">
-                        I'm a passionate full-stack developer with over 5 years of experience
-                        creating digital solutions that make a difference. My journey began
-                        with a curiosity about how things work, which led me to discover
+                        I'm a passionate full-stack developer with over 5 years of experience 
+                        creating digital solutions that make a difference. My journey began 
+                        with a curiosity about how things work, which led me to discover 
                         the world of programming and design.
                     </p>
                     <p class="about-description">
-                        I specialize in modern web technologies and enjoy working on projects
-                        that challenge me to learn and grow. When I'm not coding, you can find
-                        me exploring new technologies, contributing to open-source projects,
+                        I specialize in modern web technologies and enjoy working on projects 
+                        that challenge me to learn and grow. When I'm not coding, you can find 
+                        me exploring new technologies, contributing to open-source projects, 
                         or sharing knowledge with the developer community.
-                    </p>
-                    <p class="about-description">
-                        I am constantly expanding my skill set and staying up-to-date with the latest industry trends.
-                        My goal is to create innovative solutions that not only meet but exceed client expectations.
                     </p>
                     <div class="about-stats">
                         <div class="stat">
@@ -155,10 +154,6 @@
                 <p class="section-subtitle">Tools and technologies I work with</p>
             </div>
             <div class="skills-grid">
-                <div class="skills-box">
-                    <h3 style="color: var(--token-typography_color_color_secondary); line-height: var(--token-typography_line_height_line_height_default); font-size: var(--token-typography_font_size_font_size_2_xl);"><!-- TODO: Add content for the new header element --></h3>
-                    <p style="color: var(--token-typography_color_color_secondary); font-size: var(--token-typography_font_size_font_size_lg); line-height: var(--token-typography_line_height_line_height_default);"><!-- TODO: Add content for the new text element --></p>
-                </div>
                 <div class="skill-category">
                     <h3 class="category-title">Frontend</h3>
                     <div class="skill-items">
@@ -266,7 +261,7 @@
     <section id="projects" class="projects">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Featured Projects</h2>
+                <h2 class="section-title">My Projects</h2>
                 <p class="section-subtitle">Some of my recent work</p>
             </div>
             <div class="projects-grid">
@@ -277,7 +272,7 @@
                     <div class="project-content">
                         <h3 class="project-title">E-Commerce Platform</h3>
                         <p class="project-description">
-                            A full-stack e-commerce solution built with React, Node.js, and MongoDB.
+                            A full-stack e-commerce solution built with React, Node.js, and MongoDB. 
                             Features include user authentication, payment processing, and admin dashboard.
                         </p>
                         <div class="project-tech">
@@ -306,7 +301,7 @@
                     <div class="project-content">
                         <h3 class="project-title">Task Management App</h3>
                         <p class="project-description">
-                            A responsive task management application with real-time collaboration
+                            A responsive task management application with real-time collaboration 
                             features. Built with modern web technologies and clean UI design.
                         </p>
                         <div class="project-tech">
@@ -335,7 +330,7 @@
                     <div class="project-content">
                         <h3 class="project-title">Analytics Dashboard</h3>
                         <p class="project-description">
-                            A comprehensive analytics dashboard with interactive charts and
+                            A comprehensive analytics dashboard with interactive charts and 
                             real-time data visualization. Designed for business intelligence.
                         </p>
                         <div class="project-tech">
@@ -409,8 +404,7 @@
                             <input type="text" id="subject" name="subject" placeholder="Subject" required>
                         </div>
                         <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Your Message" rows="5"
-                                required></textarea>
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Send Message</button>
                     </form>
@@ -443,5 +437,4 @@
         </div>
     </footer>
 </body>
-
 </html>

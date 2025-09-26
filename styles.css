@@ -83,11 +83,6 @@ p {
     transform: translateY(-2px);
 }
 
-/* Skills Section */
-.skills-box {
-    padding: var(--token-spacing_padding_space_8);
-}
-
 /* Navigation */
 .navbar {
     position: fixed;
@@ -354,7 +349,7 @@ section {
 
 /* About Section */
 .about {
-    background: var(--token-background_color_color_primary);
+    background: #f8f9fa;
 }
 
 .about-content {
@@ -492,6 +487,61 @@ section {
 .skill-bar[data-level="75"] { width: 75%; }
 .skill-bar[data-level="70"] { width: 70%; }
 .skill-bar[data-level="65"] { width: 65%; }
+
+/* Achievements Section */
+.achievements {
+    background: #fff;
+}
+
+.achievements-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.achievement-item {
+    background: #f8f9fa;
+    border-radius: 15px;
+    padding: 2rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.achievement-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.achievement-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.achievement-content {
+    flex-grow: 1;
+}
+
+.achievement-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.achievement-description {
+    color: #666;
+    font-size: 1rem;
+    margin: 0;
+}
 
 /* Projects Section */
 .projects {
@@ -749,7 +799,7 @@ section {
     }
 
     .hero-description {
-        color: rgba(255, 0, 0, 1);
+        color: rgba(186, 39, 39, 1);
     }
 
     .nav-menu {
