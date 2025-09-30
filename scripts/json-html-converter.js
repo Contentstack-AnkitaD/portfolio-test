@@ -1279,14 +1279,14 @@ async function convertAndSendToStudio(options = {}, targetOrigin = '*') {
     
     // TODO: Temporary debug aid — also download the JSON we send to Studio.
     // Remove try catch below once comparison is completed.
-    try {
-      const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
-      const pageRoute = getPageRoute();
-      const debugFilename = `${pageRoute}-${timestamp}-studio.json`;
-      downloadJSON(result, debugFilename);
-    } catch (e) {
-      console.warn('JSON debug download failed:', e);
-    }
+    // try {
+    //   const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
+    //   const pageRoute = getPageRoute();
+    //   const debugFilename = `${pageRoute}-${timestamp}-studio.json`;
+    //   downloadJSON(result, debugFilename);
+    // } catch (e) {
+    //   console.warn('JSON debug download failed:', e);
+    // }
     
     // Send to parent window (Studio)
     window.parent.postMessage({
